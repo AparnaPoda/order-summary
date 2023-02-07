@@ -1,0 +1,119 @@
+:root {
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body,html {
+    height: 100%;
+} */
+body {
+    background-color: var(--Pale-blue);
+    min-width: 100vh;
+    /* max-height: 100vh; */
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background-size: contain; 
+}
+/* #main {
+    height: 100%;
+} */
+
+.container {
+    background-color: white;
+    text-align: center;
+    margin: 100px auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    width: 370px;
+    border-radius: 15px;
+}
+#img-main {
+    width: 370px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.content {
+    padding: 3% 5%;
+
+}
+.plan {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--Very-pale-blue);
+    padding: 5%;
+    margin:2% 4%;
+    border-radius: 12px;
+}
+.plan a:hover{
+    text-decoration: none;
+    color: hsl(245, 71%, 65%);
+}
+
+button {
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 4% 27%;
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    margin: 5% auto;
+    border-radius: 12px;
+    cursor: pointer;
+    /* display: block; */
+}
+.btn:hover {
+    background-color: hsl(245, 83%, 61%);
+}
+ul {
+    list-style-type: none;
+}
+li:first-child {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+li:last-child {
+    color: var(--Desaturated-blue);
+}
+h1 {
+    /* font-size: 26px; */
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    padding: 7% 7% 5% 7%;
+}
+
+.cancel {
+    color: var(--Desaturated-blue);
+    /* font-size: 20px; */
+    
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#footer{
+    margin: 2% auto 7%;
+}
+
